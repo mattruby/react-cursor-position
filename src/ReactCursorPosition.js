@@ -221,7 +221,7 @@ export default class extends React.Component {
         }
     }
 
-    componentWillReceiveProps({ isEnabled: willBeEnabled }) {
+    UNSAFE_componentWillReceiveProps({ isEnabled: willBeEnabled }) {
         const { isEnabled } = this.props;
         const isEnabledWillChange = isEnabled !== willBeEnabled;
 
